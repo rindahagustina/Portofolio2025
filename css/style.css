@@ -1,0 +1,500 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #F6F0E4;
+  color: #13294B;
+  text-align: center;
+}
+
+/* Header */
+header {
+  position: relative;   
+  text-align: center;
+  margin-bottom: 60px;  
+}
+
+header h1 {
+  margin: 45px 0 0;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+/* Menu Absolute */
+.menu {
+  position: absolute;
+  left: 50%;
+  top: 120px; 
+  transform: translateX(-50%);
+}
+
+.menu button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 2px solid #13294B;
+  background-color: #F6F0E4;
+  color: #13294B;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #13294B;
+  color: #F6F0E4;
+  transform: scale(1.05);
+}
+
+/* Circle Section */
+.circle-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  margin-top: 80px;
+}
+
+/* Container tiap lingkaran */
+.circle-container {
+  text-align: center;
+}
+
+/* Tombol di atas lingkaran */
+.circle-btn {
+  background-color: #F6F0E4;
+  color: #13294B;
+  border: 2px solid #13294B;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.circle-btn:hover {
+  background-color: #13294B;
+  color: #F6F0E4;
+  transform: scale(1.05);
+}
+
+/* Lingkaran */
+.circle {
+  width: 250px;
+  height: 250px;
+  background-color: #13294B;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  width: 160px;
+  height: auto;
+}
+
+.quote-container {
+  text-align: center;
+  margin-top: 80px; 
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #13294B;
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+}
+
+.quote-text::before,
+.quote-text::after {
+  content: "";
+  display: inline-block;
+  width: 400px;
+  height: 2px;
+  background: #13294B;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+/* Section About Me */
+.about-section {
+  padding: 80px 20px;
+  margin-top: 40px;
+  margin-bottom: 140px;
+  background-color: #F6F0E4; 
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1000px;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.about-circle img {
+  width: 350px;
+  height: auto;
+  border-radius: 50%; 
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+font-family: 'lato', sans-serif;
+font-size: 1rem;
+line-height: 2.0;
+text-align: justify;
+}
+
+/* About Button */
+.about-btn {
+  position: absolute;
+  top: 20px;
+  background-color: #F6F0E4;
+  color: #13294B;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Section Skill */
+.skill-section {
+  margin-top: 100px;
+  margin-bottom: 170px;
+  background-color: #F6F0E4;
+  text-align: center;
+}
+
+.skill-section h2 {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  color: #13294B;
+}
+
+.skill-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 50px; 
+  justify-items: center; 
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo-item img {
+  max-width: 80px; 
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-item:hover img {
+  transform: scale(1.1); 
+}
+
+.skill-logos img {
+  width: 80px;      
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-logos img:hover {
+  transform: scale(1.2); 
+}
+
+.logo-item {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-item img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-item img:hover {
+  transform: scale(1.2);
+}
+
+/* Tooltip */
+.tooltip {
+  visibility: hidden;
+  width: max-content;
+  background-color: #13294B; 
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  
+  /* Posisi tooltip */
+  position: absolute;
+  bottom: 110%; 
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Animasi */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.logo-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* My Project Section */
+#projects {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-top: -50px;
+  color: #13294B; 
+  text-transform: capitalize; 
+}
+
+.projects-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: thin;
+}
+
+.projects-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.projects-scroll::-webkit-scrollbar-thumb {
+  background: #F6F0E4;
+  border-radius: 10px;
+}
+
+.project-box {
+  min-width: 320px; 
+  max-width: 400px;
+  background: #13294B;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 40px;
+  flex-shrink: 0; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Gambar project grid */
+.project-images {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.project-2 .project-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.project-2 .project-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Efek hover */
+.project-images img:hover {
+  transform: scale(1.2); 
+  z-index: 2; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5); 
+}
+
+/* Deskripsi project */
+.project-description {
+  flex: 1;
+  text-align: left;
+  color: #F6F0E4;
+}
+
+.project-description h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.project-description p {
+  line-height: 1.6;
+  font-size: larger;
+  text-align: justify;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #F6F0E4; 
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-top: -50px;
+  color: #13294B; 
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  gap: 40px;
+}
+
+.contact-icons img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(120%);
+}
+
+/* Side Buttons */
+.side-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #13294B;
+  color: #F6F0E4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.side-btn.left {
+  left: -90px;
+}
+
+.side-btn.right {
+  right: -90px;
+}
+
+/* Hover Effect */
+.about-btn:hover {
+  background-color: #13294B;
+  color: #F6F0E4;
+  transform: scale(1.1);
+}
+
+.side-btn:hover {
+  background-color: #F6F0E4;
+  color: #13294B;
+  transform: scale(1.1);
+}
+
+/* Highlight */
+.highlight {
+  background-color: #13294B;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.shiny-words {
+  position: relative;
+  display: inline-block;
+  color: #13294B;
+  background: linear-gradient(
+    90deg,
+    #13294B 0%,
+    #F6F0E4 50%,
+    #13294B 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent; 
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: none; 
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #13294B; 
+}
+
+.floating-btn:hover {
+  background-color: rgba(0, 0, 128, 0.1); 
+  transform: scale(1.1);
+}
+
+.home-icon {
+  width: 28px;
+  height: 28px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
