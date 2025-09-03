@@ -26,7 +26,7 @@ Sebuah website portofolio sederhana yang menampilkan profil, karya, kemampuan, d
 
 ## AI Support Explanation
 Project ini dikembangkan dengan bantuan AI (IBM Granite, ChatGPT) untuk:
-  Memberikan panduan selama proses pembuatan website (struktur HTML, styling CSS, dan deployment)
-  Memberikan saran penggunaan GitHub & Vercel
-  Memberikan ide-ide penjelasan teknis (teknologi, fitur, dll.)
-  Menyusun README yang rapi dan terstruktur
+- Memberikan panduan selama proses pembuatan website (struktur HTML, styling CSS, dan deployment)
+- Memberikan saran penggunaan GitHub & Vercel
+- Memberikan ide-ide penjelasan teknis (teknologi, fitur, dll.)
+- Menyusun README yang rapi dan terstruktur
