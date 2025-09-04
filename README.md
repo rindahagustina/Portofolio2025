@@ -13,7 +13,7 @@ Sebuah website portofolio sederhana yang menampilkan profil, karya, kemampuan, d
 ## Features
 - Halaman utama dengan informasi profil singkat  
 - Navigasi sederhana  
-- Desain responsif dasar (bisa diakses di laptop & HP)  
+- Desain responsif dasar  
 - Tampilan clean menggunakan CSS custom  
 
 ## Setup Instructions
